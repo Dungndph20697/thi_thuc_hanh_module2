@@ -13,43 +13,43 @@ public class Main {
             int choie = Integer.valueOf(sc.nextLine());
             switch (choie) {
                 case 1: {
-                    System.out.println("Chọn loại điện thoại (1: xách tay, 2: chính hãng):");
-                    int type = Integer.valueOf(sc.nextLine());
-                    if (type == 1) {
-                        System.out.println("Nhập ID điện thoại: ");
-                        int id = Integer.valueOf(sc.nextLine());
-                        System.out.println("Nhập tên điện thoại: ");
-                        String phoneName = sc.nextLine();
-                        System.out.println("Nhập giá điện thoại: ");
-                        String price = sc.nextLine();
-                        System.out.println("Nhập số lượng điện thoại: ");
-                        int quantity = Integer.parseInt(sc.nextLine());
-                        System.out.println("Nhập nhà sản xuất: ");
-                        String brand = sc.nextLine();
-                        System.out.println("Nhập quốc gia xuất xứ: ");
-                        String sourceCountry = sc.nextLine();
-                        System.out.println("Nhập trạng thái (1: Da sua chua, 2: chua sua chua): ");
-                        int status = Integer.parseInt(sc.nextLine());
-                        Phone phone = new UnlockedPhone(id, phoneName, price, quantity, brand, sourceCountry, status);
-                        phoneManager.addPhone(phone);
-                    } else if (type == 2) {
-                        System.out.println("Nhập ID điện thoại: ");
-                        int id = Integer.valueOf(sc.nextLine());
-                        System.out.println("Nhập tên điện thoại: ");
-                        String phoneName = sc.nextLine();
-                        System.out.println("Nhập giá điện thoại: ");
-                        String price = sc.nextLine();
-                        System.out.println("Nhập số lượng điện thoại: ");
-                        int quantity = Integer.parseInt(sc.nextLine());
-                        System.out.println("Nhập nhà sản xuất: ");
-                        String brand = sc.nextLine();
-                        System.out.println("Nhập thời gian bảo hành: ");
-                        String warrantyDuration = sc.nextLine();
-                        System.out.println("Nhập phạm vi bảo hành: ");
-                        String warrantyCoverage = sc.nextLine();
-                        Phone phone = new GenuinePhone(id, phoneName, price, quantity, brand, warrantyDuration, warrantyCoverage);
-                        phoneManager.addPhone(phone);
-                    }
+//                    System.out.println("Chọn loại điện thoại (1: xách tay, 2: chính hãng):");
+//                    int type = Integer.valueOf(sc.nextLine());
+//                    if (type == 1) {
+//                        System.out.println("Nhập ID điện thoại: ");
+//                        int id = Integer.valueOf(sc.nextLine());
+//                        System.out.println("Nhập tên điện thoại: ");
+//                        String phoneName = sc.nextLine();
+//                        System.out.println("Nhập giá điện thoại: ");
+//                        String price = sc.nextLine();
+//                        System.out.println("Nhập số lượng điện thoại: ");
+//                        int quantity = Integer.parseInt(sc.nextLine());
+//                        System.out.println("Nhập nhà sản xuất: ");
+//                        String brand = sc.nextLine();
+//                        System.out.println("Nhập quốc gia xuất xứ: ");
+//                        String sourceCountry = sc.nextLine();
+//                        System.out.println("Nhập trạng thái (1: Da sua chua, 2: chua sua chua): ");
+//                        int status = Integer.parseInt(sc.nextLine());
+//                        Phone phone = new UnlockedPhone(id, phoneName, price, quantity, brand, sourceCountry, status);
+//                        phoneManager.addPhone(phone);
+//                    } else if (type == 2) {
+//                        System.out.println("Nhập ID điện thoại: ");
+//                        int id = Integer.valueOf(sc.nextLine());
+//                        System.out.println("Nhập tên điện thoại: ");
+//                        String phoneName = sc.nextLine();
+//                        System.out.println("Nhập giá điện thoại: ");
+//                        String price = sc.nextLine();
+//                        System.out.println("Nhập số lượng điện thoại: ");
+//                        int quantity = Integer.parseInt(sc.nextLine());
+//                        System.out.println("Nhập nhà sản xuất: ");
+//                        String brand = sc.nextLine();
+//                        System.out.println("Nhập thời gian bảo hành: ");
+//                        String warrantyDuration = sc.nextLine();
+//                        System.out.println("Nhập phạm vi bảo hành: ");
+//                        String warrantyCoverage = sc.nextLine();
+//                        Phone phone = new GenuinePhone(id, phoneName, price, quantity, brand, warrantyDuration, warrantyCoverage);
+//                        phoneManager.addPhone(phone);
+//                    }
                     int id = phoneManager.genPhoneID();
                     System.out.println("Nhập tên điện thoại: ");
                     String phoneName;
