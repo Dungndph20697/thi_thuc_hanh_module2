@@ -70,6 +70,9 @@ public class Main {
                         if (price.isEmpty()) {
                             System.out.println("Giá điện thoại không được để trống. Vui lòng nhập lại:");
                         }
+                        if (Double.valueOf(price) < 0.0) {
+                            System.out.println("Giá điện thoại không được nhỏ hơn 0. Vui lòng nhập lại:");
+                        }
                         {
                             try {
                                 Double.parseDouble(price);
